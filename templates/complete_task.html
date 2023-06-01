@@ -1,3 +1,6 @@
+{% extends 'base.html' %} 
+
+{% block content %}
 <h2>Mark Task as Completed</h2>
 <form action="" method="post">
   <p> Are you sure you want to mark {{object}} as completed?</p>
@@ -5,3 +8,4 @@
   {% csrf_token %}
   <button type="submit">Mark as Complete</button>
 </form>
+{% endblock %}
